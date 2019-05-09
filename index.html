@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 100;">
+        <h1>How much Income tax should I pay?</h1>
+        <br><br>
+        <div class="form-group">
+            <input type="number" min=0 id="salary" class="form-control salary-input" placeholder="Enter Salary">
+        </div>
+        <br>
+        <table class="table  mytable">
+            <thead>
+                <tr>
+                    <th>Slab</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>₹0 - ₹2.5L </td>
+                    <td>Nil</td>
+                </tr>
+                <tr>
+                    <td>₹2.5L - ₹ 5L</td>
+                    <td id="slab1">Nil</td>
+                </tr>
+                <tr>
+                    <td>₹5L - ₹10L</td>
+                    <td id="slab2">Nil</td>
+                </tr>
+                <tr>
+                    <td>₹10L & above</td>
+                    <td id="slab3">Nil</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total">Nil</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br><br>
+        <p>Built with ❤️ by <a href="https://twitter.com/justvidyadhar">@justvidyadhar</a></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
