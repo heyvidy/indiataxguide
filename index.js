@@ -22,15 +22,15 @@ $(document).ready(function () {
                     diff = diff - 500000;
                     slab1 = 12500;
                     slab2 = 50000;
-                    $("#slab1").text(`${slab1}`);
-                    $("#slab2").text(`${slab2}`);
+                    $("#slab1").text(`${slab1.toLocaleString()}`);
+                    $("#slab2").text(`${slab2.toLocaleString()}`);
 
-                    slab3 = diff * 0.3;
-                    $("#slab3").text(`${slab3}`);
+                    slab3 = parseInt(diff * 0.3);
+                    $("#slab3").text(`${slab3.toLocaleString()}`);
 
                 }
             }
-            $("#total").text(`${slab1 + slab2 + slab3}`)
+            $("#total").text(`${parseInt(slab1 + slab2 + slab3).toLocaleString()}`)
 
         } else {
             $("#total").text("No Tax yet! 🎉")
